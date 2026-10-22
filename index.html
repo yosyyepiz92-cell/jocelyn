@@ -1,40 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0A1933">
+<title>Una canción especial | XV de Yaretzi</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 20px 12px;
+  min-height: 100vh;
+  padding: 24px 14px;
   background: #0A1933;
   color: #D5DAE4;
-  font-family: Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
 .tarjeta {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 20px;
   border: 1px solid #AEB8C9;
-  padding: 25px 12px;
 }
-h2 {
-  font-size: 28px;
+
+.adornos {
+  color: #AEB8C9;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+h1 {
+  margin: 24px 0 18px;
+  font-size: clamp(26px, 6vw, 34px);
   font-weight: normal;
   font-style: italic;
+  line-height: 1.3;
 }
-p {
+
+.subtitulo {
+  margin: 0;
   font-size: 12px;
+  line-height: 2;
   letter-spacing: 2px;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 28px auto 18px;
+}
+
+.nota {
+  margin: 18px 0 24px;
+  color: #AEB8C9;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 380px) {
+  .tarjeta {
+    padding: 26px 14px;
+  }
+
+  .subtitulo {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
 }
 </style>
 </head>
+
 <body>
-<div class="tarjeta">
-  ✧ ───── ❖ ───── ✧
-  <h2>Una canción especial</h2>
-  <p>PARA LOS XV AÑOS DE YARETZI</p>
-  <p>PRÓXIMAMENTE</p>
-  ✧ ───── ❖ ───── ✧
-</div>
+<main class="tarjeta">
+
+  <div class="adornos">✧ ───── ❖ ───── ✧</div>
+
+  <h1>Una canción especial</h1>
+
+  <p class="subtitulo">
+    PARA LOS XV AÑOS DE YARETZI
+  </p>
+
+  <audio controls preload="metadata">
+    <source src="Selena%20-%20Dreaming%20of%20You%20(30th%20Anniversary%20Remastered%202025).mp3" type="audio/mpeg">
+    Tu navegador no puede reproducir este audio.
+  </audio>
+
+  <p class="nota">
+    Una melodía para acompañar un momento inolvidable.
+  </p>
+
+  <div class="adornos">✧ ───── ❖ ───── ✧</div>
+
+</main>
 </body>
 </html>
